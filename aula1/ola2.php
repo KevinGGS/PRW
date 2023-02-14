@@ -10,7 +10,7 @@
     <h1>Exemplo Olá Mundo</h1>
     <?php
             // Aqui é o codigo PHP
-            echo "Olá IFSP";
+            echo "Olá IFSP if";
     ?>  
 </body>
 </html>
