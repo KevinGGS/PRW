@@ -10,4 +10,10 @@ echo "Aluno na posição $x: ".$alunos[$x]."\n";
 echo "quantidade de aracteres: ".strlen($alunos[$x])."\n";
 echo "<hr>";
 }
+$indice = array_search("Murilo",$alunos);
+if($indice === false){
+echo "Elementos não encontrados!\n";
+} else{
+    "Elemento encontrado na posição $indice\n";
+}
 ?>
