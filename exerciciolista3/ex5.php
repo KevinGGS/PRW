@@ -1,17 +1,15 @@
 <?php
-//Positivos e Media
-
-$positivos = 0;
-$soma = 0;
-for ($i = 1; $i <= 6; $i++)
+$p = 0;
+$s = 0;
+for($i = 1; $i <= 6; $i++)
     {
         $a = fgets(STDIN);
-        if ($a > 0)
+        if($a > 0)
         {
-            $positivos++;
-            $soma += $a;
+            $p++;
+            $s += $a;
         }
     }
-echo "$positivos valores positivos" . PHP_EOL;
-echo number_format($soma / $positivos, 1) . PHP_EOL;
+echo "$p valores positivos\n";
+echo number_format($s / $p, 1) "\n";
 ?> 

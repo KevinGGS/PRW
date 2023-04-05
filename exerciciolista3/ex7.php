@@ -1,18 +1,23 @@
 <?php
 //Par ou impar
-$n = intval(fgets(STDIN));
+$x = intval(fgets(STDIN));
 
-for ($i = 0; $i < $n; $i++) {
-  $num = intval(fgets(STDIN));
-  if ($num == 0) {
+for($i = 0; $i < $x; $i++) {
+  $n = intval(fgets(STDIN));
+  if($n == 0) {
     echo "NULL\n";
-  } else {
-    if ($num % 2 == 0) {
+  } 
+  else 
+  {
+    if($n % 2 == 0) 
+    {
       echo "EVEN ";
-    } else {
+    } 
+    else {
       echo "ODD ";
     }
-    if ($num > 0) {
+    if($n > 0) 
+    {
       echo "POSITIVE\n";
     } else {
       echo "NEGATIVE\n";

@@ -1,15 +1,11 @@
 <?php
-//Pares entre Cinco Numeros
+$c = 0;
 
-$count = 0;
-
-for ($i = 0; $i < 5; $i++) {
-  $num = intval(fgets(STDIN));
-  if ($num % 2 == 0) {
-    $count++;
+for ($i = 0; $i < 6; $i++) {
+  $n = intval(fgets(STDIN));
+  if ($n % 2 == 0) {
+    $c++;
   }
 }
-
-echo "$count valores pares\n";
-
+echo "$c valores pares\n";
 ?>

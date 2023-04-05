@@ -1,5 +1,4 @@
 <?php
-//Sequencia IJ 2
 
 for ($i = 1, $j = 7; true;)
 {

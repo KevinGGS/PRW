@@ -1,43 +1,42 @@
 <?php
-//Experiencias
 
 $coelhos = 0;
 $ratos = 0;
 $sapos = 0;
-$total = 0;
+$t = 0;
 
 $n = intval(fgets(STDIN));
 
 for ($i = 0; $i < $n; $i++) {
-    $input = explode(" ", fgets(STDIN));
-    $quantidade = intval($input[0]);
-    $tipo = trim($input[1]);
+    $ent = explode(" ", fgets(STDIN));
+    $q = intval($ent[0]);
+    $tipo = trim($ent[1]);
     
     switch ($tipo) {
         case 'C':
-            $coelhos += $quantidade;
+            $coelhos += $q;
             break;
         case 'R':
-            $ratos += $quantidade;
+            $ratos += $q;
             break;
         case 'S':
-            $sapos += $quantidade;
+            $sapos += $q;
             break;
     }
     
-    $total += $quantidade;
+    $t += $q;
 }
 
-$percentualCoelhos = ($coelhos / $total) * 100;
-$percentualRatos = ($ratos / $total) * 100;
-$percentualSapos = ($sapos / $total) * 100;
+$pC = ($coelhos / $t) * 100;
+$pR = ($ratos / $t) * 100;
+$pS = ($sapos / $t) * 100;
 
-echo "Total: $total cobaias\n";
+echo "Total: $t cobaias\n";
 echo "Total de coelhos: $coelhos\n";
 echo "Total de ratos: $ratos\n";
 echo "Total de sapos: $sapos\n";
-echo "Percentual de coelhos: " . number_format($percentualCoelhos, 2) . " %\n";
-echo "Percentual de ratos: " . number_format($percentualRatos, 2) . " %\n";
-echo "Percentual de sapos: " . number_format($percentualSapos, 2) . " %\n";
+echo "Percentual de coelhos: " . number_format($pC, 2) . " %\n";
+echo "Percentual de ratos: " . number_format($pR, 2) . " %\n";
+echo "Percentual de sapos: " . number_format($pS, 2) . " %\n";
 
 ?>

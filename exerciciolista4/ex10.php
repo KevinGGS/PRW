@@ -1,10 +1,10 @@
 <?php
 // Divisores I
 
-$numero = intval(fgets(STDIN));
+$n = intval(fgets(STDIN));
 
-for ($i = 1; $i <= $numero; $i++) {
-  if ($numero % $i == 0) {
+for ($i = 1; $i <= $n; $i++) {
+  if ($n % $i == 0) {
     echo $i . "\n";
   }
 }

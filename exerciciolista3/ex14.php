@@ -1,6 +1,4 @@
 <?php
-    //Sequencia IJ 1
-
     $i = 0;
     $j = 1;
 
@@ -10,4 +8,4 @@
     echo  "I=$i J=" . ($j+2+$i) . PHP_EOL;
         $i+= 0.2;
     }
-    ?>
+?>

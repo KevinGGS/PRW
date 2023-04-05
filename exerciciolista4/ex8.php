@@ -7,5 +7,5 @@ for ($i = 1; $i <= 100; $i++) {
     $soma += 1/$i;
 }
 
-echo number_format($soma, 2) . "\n";
+echo number_format($soma, 2, '.', '') . "\n";
 ?>  

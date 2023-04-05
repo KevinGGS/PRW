@@ -1,18 +1,14 @@
 <?php
-// Fibonacci Fácil
-
 $n = intval(fgets(STDIN));
-
 $a = 0;
 $b = 1;
-$seq = "$a $b";
-
-for ($i = 2; $i < $n; $i++) {
+$fib = "$a $b";
+for ($i = 2; $i < $n; $i++) 
+{
     $c = $a + $b;
-    $seq .= " $c";
+    $fib .= " $c";
     $a = $b;
     $b = $c;
 }
-
-echo "$seq\n";
+echo "$fib\n";
 ?>  

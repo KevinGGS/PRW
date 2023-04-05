@@ -1,17 +1,15 @@
 <?php
-// Maior e posição
+$m;
+$p;
 
-$maior = 0;
-$posicao = 0;
-
-for ($i = 1; $i <= 100; $i++) {
-    $numero = intval(fgets(STDIN));
+for($i = 1; $i <= 100; $i++) 
+{
+    $n = intval(fgets(STDIN));
     
-    if ($numero > $maior) {
-        $maior = $numero;
-        $posicao = $i;
+    if ($n > $m) {
+        $m = $n;
+        $p = $i;
     }
 }
-
-echo $maior . "\n" . $posicao . "\n";
+echo $m . "\n" . $p . "\n";
 ?>

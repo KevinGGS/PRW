@@ -1,20 +1,19 @@
 <?php
-// Idades
 
-$somaIdades = 0;
-$quantidadePessoas = 0;
+$Idades = 0;
+$qP = 0;
+while (true) 
+{
+    $i = intval(fgets(STDIN));
 
-while (true) {
-    $idade = intval(fgets(STDIN));
-
-    if ($idade < 0) {
+    if ($i < 0) 
+    {
         break;
     }
-
-    $somaIdades += $idade;
-    $quantidadePessoas++;
+    $Idades += $i;
+    $qP++;
 }
+$mI = $sI / $qP;
+echo number_format($mI, 2, '.', '') . "\n";
 
-$mediaIdades = $somaIdades / $quantidadePessoas;
-echo number_format($mediaIdades, 2) . "\n";
 ?>  

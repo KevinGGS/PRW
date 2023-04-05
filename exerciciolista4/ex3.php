@@ -1,15 +1,15 @@
 <?php
 
-$input = explode(' ', fgets(STDIN));
+$entrada = explode(' ', fgets(STDIN));
 
-$n = intval($input[count($input) - 1]);
-$a = intval($input[0]);
-$sum = 0;
+$n = intval($entrada[count($entrada) - 1]);
+$a = intval($entrada[0]);
+$soma = 0;
 
-for ($i = 0; $i < $n; $i++) {
-    $sum +=  $a + $i;
+for($i = 0; $i < $n; $i++) 
+{
+    $soma +=  $a + $i;
 }
-
-echo "$sum\n";
+echo "$soma\n";
 
 ?>
