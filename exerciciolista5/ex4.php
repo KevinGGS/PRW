@@ -1,48 +1,46 @@
 <?php
-// LED
-
     $n = readline();
-    while($n>0){
-        $line = readline();
-        $comprimento = strlen($line);
-        $nled=0;
-        for($j = 0; $j< $comprimento; $j++){
-            $caracter = $line[$j];
-            switch($caracter){
+    while($n>0)
+    {
+        $linha = readline();
+        $c = strlen($linha);
+        $led=0;
+        for($i = 0; $i< $c; $i++){
+            $pess = $linha[$i];
+            switch($pess){
                 case 0:
-                    $nled+=6;
+                    $led+=6;
                     break;
                 case 1:
-                    $nled+=2;
+                    $led+=2;
                     break;
                 case 2:
-                    $nled +=5;
+                    $led +=5;
                     break;
                 case 3:
-                    $nled +=5;
+                    $led +=5;
                     break;
                 case 4:
-                    $nled +=4;
+                    $led +=4;
                     break;
                 case 5:
-                    $nled += 5;
+                    $led += 5;
                     break;
                 case 6:
-                    $nled +=6;
+                    $led +=6;
                     break;
                 case 7:
-                    $nled += 3;
+                    $led += 3;
                     break;
                 case 8:
-                    $nled += 7;
+                    $led += 7;
                     break;
                 case 9:
-                    $nled +=6;
+                    $led +=6;
                     break;
             }
         }
-        
-        echo"$nled leds\n";
+        echo"$led leds\n";
         $n--;
     }
 ?>
