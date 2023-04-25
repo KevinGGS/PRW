@@ -1,42 +1,61 @@
 <?php
-$pront = $_GET['pront'];
-$nome = $_GET['nome'];
-$idade = $_GET['idade'];
-$periodo = $_GET['periodo'];
-$modulo = $_GET['modulo'];
+$p = $_GET['prontuario'];
+$n = $_GET['nome'];
+$i = $_GET['idade'];
+$pe = $_GET['periodo'];
+$m = $_GET['modulo'];
 
-if($pront == "") {
-    echo "O campo prontuário não foi preenchido";
-} else {
-    echo "O prontuário é: " . $pront;
+if($p == "") 
+{
+    echo "O prontuario não foi inserido";
+} 
+else 
+{
+    echo "O prontuário é: " . $p;
 }
 echo "<br>";
-if($nome == "") {
-    echo "O campo nome não foi preenchido";
-} else {
-    echo "O nome é: " . $nome;
+
+if($n == "") 
+{
+    echo "O nome não foi inserido";
+}
+ else 
+{
+    echo "O nome é: " . $n;
 }
 echo "<br>";
-if($idade >= 15 && $idade <= 75) {
-    echo "A idade é: " . $idade;
-} else {
+if($i >= 15 && $i <= 75) 
+{
+    echo "A idade é: " . $i;
+} 
+else {
     echo "A idade deve ser entre 15 e 75 anos";
 }
 echo "<br>";
-if($periodo == "Vespertino" || $periodo == "V" || $periodo == "Noturno" || $periodo == "N") {
-    if($periodo == "Vespertino" || $periodo == "V") {
-       $periodo = "Vespertino";
-    } else{
-         $periodo = "Noturno";
+
+if($pe == "Vespertino" || $pe == "V" || $pe == "Noturno" || $pe == "N") 
+{
+    if($pe == "Vespertino" || $pe == "V") 
+    {
+       $pe = "Vespertino";
+    } 
+    else
+    {
+         $pe = "Noturno";
      }
-    echo "O período é: " . $periodo;
-} else {
+    echo "O período é: " . $pe;
+} 
+else 
+{
     echo "O período deve ser V-Vespertino ou N-Noturno";
 }
 echo "<br>";
-if($modulo >= 1 && $modulo <= 4) {
-    echo "O módulo é: " . $modulo;
-} else {
+if($m >= 1 && $m <= 4) 
+{
+    echo "O módulo é: " . $m;
+} 
+else 
+{
     echo "O módulo deve ser entre 1 e 4";
 }
 ?>
